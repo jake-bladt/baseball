@@ -44,6 +44,7 @@ uni = Universe(players)
 uni.calculate_averages()
 avg = uni.averagePlayer
 
-print 'The average player has ' + str(avg.homeRuns) + ' home runs, ' + str(avg.runs) + ' runs, and ' + str(avg.stolenBases) + ' steals.'
-  
+print 'The average player has ' + str(avg.homeRuns) + ' home runs, ' + str(avg.runs) + \
+  ' runs, and ' + str(avg.stolenBases) + ' steals.'
+
 f.close()
