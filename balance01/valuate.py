@@ -58,6 +58,6 @@ print 'The average player has ' + str(avg.homeRuns) + ' home runs, ' + str(avg.r
   ' runs, and ' + str(avg.stolenBases) + ' steals.'
 
 for p in players:
-  print p.name + ' has a score of ' + p.compare_to(uni.averagePlayer)
+  print p.name + ' has a score of ' + str(p.compare_to(uni.averagePlayer))
 
 f.close()
