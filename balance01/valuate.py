@@ -22,7 +22,7 @@ for row in reader:
   if rownum == 0:
     header = row
   else:
-    players.push(Batter.from_csv_row(row)) 
+    players.append(Batter.from_csv_row(row)) 
   rownum += 1
 
 print str(len(players)) + ' players.'
