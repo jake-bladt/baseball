@@ -9,5 +9,4 @@ first_names = ['James', 'John', 'Robert', 'Michael', 'William', 'David', 'Richar
 
 for ln in last_names:
   for fn in first_names:
-
-
+    print fn + ' ' + ln
