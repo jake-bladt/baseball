@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import random
+from random import randint
 
 def dice(ct, dlevel, tmod):
   ret = tmod
