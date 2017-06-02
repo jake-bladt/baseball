@@ -6,3 +6,8 @@ last_names = ['Smith', 'Johnson', 'Williams', 'Jones', 'Brown', 'Davis', 'Miller
 
 first_names = ['James', 'John', 'Robert', 'Michael', 'William', 'David', 'Richard', 'Charles', \
   'Joseph', 'Thomas', 'Christopher', 'Daniel', 'Paul', 'Mark', 'George']
+
+for ln in last_names:
+  for fn in first_names:
+
+
