@@ -26,5 +26,6 @@ for ln in last_names:
     name = fn + ' ' + ln
     hrs = dice(3, 20, -3)
     runs = hrs + dice(15, 10, 0)
+    steals = max(0, dice(20, 8, -dice(5, 10, 59)))
 
-    print name + ': ' + str(hrs) + " HR, " + str(runs) + " R" 
+    print name + ': ' + str(hrs) + " HR, " + str(runs) + " R, " + str(steals) + " SB" 
