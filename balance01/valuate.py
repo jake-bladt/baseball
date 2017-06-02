@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 import csv
 
+class Batter:
+  def __init__(self, name, hrs, runs, steals):
+    self.name = name
+    self.homeRuns = hrs
+    self.runs = runs
+    self.stolenBases = steals
+
 f = open('./sample.csv', 'rb')
 reader = csv.reader(f)
 rownum = 0
