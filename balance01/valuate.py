@@ -36,7 +36,7 @@ class Universe:
 
     self.averagePlayer = Batter('Average', avgHrs, avgRuns, avgSteals)
 
-f = open('./sample.csv', 'rb')
+f = open('./players.csv', 'rb')
 reader = csv.reader(f)
 rownum = 0
 header = []
