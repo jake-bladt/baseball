@@ -8,10 +8,10 @@ def dice(ct, dlevel, tmod):
   return ret
 
 class Batter:
-  def __init__(self, name, hrs, rbi, steals):
+  def __init__(self, name, hrs, runs, steals):
     self.name = name
     self.homeRuns = hrs
-    self.runsBattedIn = rbi
+    self.runs = runs
     self.stolenBases = steals
 
 last_names = ['Smith', 'Johnson', 'Williams', 'Jones', 'Brown', 'Davis', 'Miller', 'Wilson', \
@@ -25,4 +25,6 @@ for ln in last_names:
   for fn in first_names:
     name = fn + ' ' + ln
     hrs = dice(3, 20, -3)
-    print name + ': ' + str(hrs) + " HR"
+    runs = hrs + dice(8, 10, -6)
+
+    print name + ': ' + str(hrs) + " HR, " + str(runs) + " R" 
