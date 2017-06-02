@@ -20,7 +20,8 @@ class Universe:
     self.players = players
 
   def calculate_averages():
-
+    avgHrs = average([p.homeRuns for p in self.players])
+    self.averagePlayer = Batter('Average', avgHrs, 0, 0)
 
 
 f = open('./sample.csv', 'rb')
@@ -37,5 +38,8 @@ for row in reader:
   rownum += 1
 
 print str(len(players)) + ' players.'
+uni = Universe(players)
+uni.calculate_averages()
+print 'The average player has ' + str(uni.averagePlayer.homeRuns)
   
 f.close()
