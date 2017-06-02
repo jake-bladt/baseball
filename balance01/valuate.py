@@ -12,11 +12,11 @@ class Batter:
     self.runs = runs
     self.stolenBases = steals
 
-  def compare_to(replacement_player):
+  def compare_to(self, replacement_player):
     score = self.homeRuns / replacement_player.homeRuns
     score += self.runs / replacement_player.runs
     score += self.stolenBases / replacement_player.stolenBases
-    scores /= 4.0
+    score /= 4.0
 
     self.score = score
     return score
@@ -56,5 +56,8 @@ avg = uni.averagePlayer
 
 print 'The average player has ' + str(avg.homeRuns) + ' home runs, ' + str(avg.runs) + \
   ' runs, and ' + str(avg.stolenBases) + ' steals.'
+
+for p in players:
+  print p.name + ' has a score of ' + p.compare_to(uni.averagePlayer)
 
 f.close()
