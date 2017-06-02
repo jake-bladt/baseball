@@ -25,6 +25,6 @@ for ln in last_names:
   for fn in first_names:
     name = fn + ' ' + ln
     hrs = dice(3, 20, -3)
-    runs = hrs + dice(10, 10, -6)
+    runs = hrs + dice(15, 10, 0)
 
     print name + ': ' + str(hrs) + " HR, " + str(runs) + " R" 
