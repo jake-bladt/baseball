@@ -1,4 +1,17 @@
 #!/usr/bin/env python
+import random
+
+def dice(ct, dlevel, tmod):
+  ret = t
+  for x in range(0, ct - 1):
+    ret +=  randint(1,dlevel)
+
+class Batter:
+  def __init__(self, name, hrs, runs, steals):
+    self.name = name
+    self.homeRuns = hrs
+    self.runs = runs
+    self.stolenBases = steals
 
 last_names = ['Smith', 'Johnson', 'Williams', 'Jones', 'Brown', 'Davis', 'Miller', 'Wilson', \
   'Moore', 'Taylor', 'Anderson', 'Thomas', 'Jackson', 'White', 'Harris', 'Martin', 'Thompson', \
@@ -9,4 +22,6 @@ first_names = ['James', 'John', 'Robert', 'Michael', 'William', 'David', 'Richar
 
 for ln in last_names:
   for fn in first_names:
-    print fn + ' ' + ln
+    name = fn + ' ' + ln
+    hrs = dice(3, 20, -3)
+    print name + ': ' + str(hrs)
