@@ -4,7 +4,8 @@ from random import randint
 def dice(ct, dlevel, tmod):
   ret = tmod
   for x in range(0, ct - 1):
-    ret +=  randint(1,dlevel)
+    ret +=  randint(1, dlevel)
+  return ret
 
 class Batter:
   def __init__(self, name, hrs, runs, steals):
