@@ -19,10 +19,9 @@ class Universe:
   def __init__(self, players):
     self.players = players
 
-  def calculate_averages():
+  def calculate_averages(self):
     avgHrs = average([p.homeRuns for p in self.players])
     self.averagePlayer = Batter('Average', avgHrs, 0, 0)
-
 
 f = open('./sample.csv', 'rb')
 reader = csv.reader(f)
