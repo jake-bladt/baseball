@@ -12,6 +12,15 @@ class Batter:
     self.runs = runs
     self.stolenBases = steals
 
+  def compare_to(replacement_player):
+    score = self.homeRuns / replacement_player.homeRuns
+    score += self.runs / replacement_player.runs
+    score += self.stolenBases / replacement_player.stolenBases
+    scores /= 4.0
+
+    self.score = score
+    return score
+
   @staticmethod
   def from_csv_row(row):
     return Batter(row[0], int(row[1]), int(row[2]), int(row[3]))
