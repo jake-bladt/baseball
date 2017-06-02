@@ -2,7 +2,7 @@
 import random
 
 def dice(ct, dlevel, tmod):
-  ret = t
+  ret = tmod
   for x in range(0, ct - 1):
     ret +=  randint(1,dlevel)
 
