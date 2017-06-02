@@ -39,6 +39,6 @@ for row in reader:
 print str(len(players)) + ' players.'
 uni = Universe(players)
 uni.calculate_averages()
-print 'The average player has ' + str(uni.averagePlayer.homeRuns)
+print 'The average player has ' + str(uni.averagePlayer.homeRuns) + ' home runs.'
   
 f.close()
