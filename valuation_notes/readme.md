@@ -18,4 +18,6 @@ While great advances have been made in chess-playing software (ie Big Blue,) the
 
 The computational requirements can be greatly decreased by applying a primary valuation model to choices and limiting the simulation in candidates and depth, but this exposes the simulation model to both weaknesses in the primary valuation and failure to predict high-delta perturbations in late rounds.
 
+## Position scarcity and second-best options
 
+Some weaknesses of the naive model can be addressed by considering both position scarcity and second-best options. 
