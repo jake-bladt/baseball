@@ -28,4 +28,5 @@ This approach is limited in that it's very hard to verify the correct coefficien
 
 A potentially promising model is one in which the valuation strategy is not predetermined, but evaluated in advance through genetic algorithms. In this model, a general template for valuation models is defined, then a large number of candidate models chosen to be simulated in direct competition. The best-performing models are iteratively weeded in until a "best" model can be determined.
 
-There are numerous difficulties with this approach. The primary one is that, as with any genetic algorithm, it is the responsibility of the programmer to determine the axes along which the strategy can shift. 
+There are numerous difficulties with this approach. The primary one is that, as with any genetic algorithm, it is the responsibility of the programmer to determine the axes along which the strategy can shift, what data might be relevant, and what sort of transformations should be considered for the available data.
+
