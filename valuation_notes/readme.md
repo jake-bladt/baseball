@@ -23,3 +23,7 @@ The computational requirements can be greatly decreased by applying a primary va
 Some weaknesses of both the naive and simulation models can be addressed by considering both position scarcity and second-best options. When considering these two data points, players are valued higher if the next-best (or most likely to be available next round) player in the same position is significantly less valuable.
 
 This approach is limited in that it's very hard to verify the correct coefficient of position scarcity relative to direct statistical output. Additionally, next-most-likely calculations require some significant amount of simulation and/or stateful awareness that again is computationally ruinous.
+
+## Genetic Prevaluation
+
+
