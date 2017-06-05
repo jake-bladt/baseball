@@ -9,3 +9,7 @@ The most obvious model to use is a naive one. In the naive model, we calculate t
 For example, in a theoretical league where batters are measured by home runs, stolen bases, and total bases, a batter with an average number of home runs, twice the average of stolen bases, and half the average of total bases is worth 3.5 points whereas a player with a quarter of the home runs, twice the stolen bases, and twice the total bases is worth 4.25 points.
 
 While this model is valuable for initial valuation, it suffers numerous shortcomings. It fails to take into account diminishing returns, opportunity cost, or position scarcity. It can overvalue sparse categories and works particularly poorly for specialized statistics like saves.
+
+## The simulation model
+
+Simulation-based modeling has the potential to be the strongest approach, but it's also the most computationally intensive. Much like traditional chess-playing programs, the simulation model evaluates the strength of each potential pick by 
