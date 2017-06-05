@@ -15,3 +15,7 @@ While this model is valuable for initial valuation, it suffers numerous shortcom
 Simulation-based modeling has the potential to be the strongest approach, but it's also the most computationally intensive. Much like traditional chess-playing programs, the simulation model evaluates the strength of each potential pick by simulating the possible countermoves of the players' fellow draftees and recommends the choice with the strongest possible outcome.
 
 While great advances have been made in chess-playing software (ie Big Blue,) they still require large amounts of computation power running on specialized hardware. Beside that, the number of possible moves in fantasy baseball is much larger than that in chess. Where a decision tree in chess has a total solution space of 1.0E120 moves, one in a twelve-team fantasy baseball league can run as large as 500! nodes (almost 1.E1000 times larger.)
+
+The computational requirements can be greatly decreased by applying a primary valuation model to choices and limiting the simulation in candidates and depth, but this exposes the simulation model to both weaknesses in the primary valuation and failure to predict high-delta perturbations in late rounds.
+
+
