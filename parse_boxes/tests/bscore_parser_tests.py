@@ -3,5 +3,5 @@ import unittest
 class BoxScoreParserTestCase(unittest.TestCase):
     """Tests for BoxScoreParser class"""
 
-    def smoke_test(self):
+    def test_smoke_test(self):
         self.assertTrue(true)
