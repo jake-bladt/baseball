@@ -1,7 +1,5 @@
 import unittest
-
-def add_one(i):
-    return i + 1
+from .my_funs import *
 
 class BoxScoreParserTestCase(unittest.TestCase):
     """Tests for BoxScoreParser class"""
